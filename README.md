@@ -1,58 +1,97 @@
-## Chatbot Homem-Robô Baseado em Evidências Científicas (Adaptado do ChatGPT-Vercel)
+# Chatbot Financeiro Baseado em Evidências
 
-Este chatbot é uma adaptação do projeto ChatGPT-Vercel, com foco em diálogos homem-robô baseados em evidências científicas. Ele herda a interface elegante e funcionalidades avançadas do projeto original, mas com ajustes para promover interações informativas e precisas.
+Este chatbot é uma adaptação do projeto ChatGPT-Vercel, com foco exclusivo em diálogos homem-robô relacionados ao contexto financeiro. Ele herda a interface elegante e funcionalidades avançadas do projeto original, mas com ajustes específicos para promover interações informativas e precisas no setor financeiro.
 
-**Características Principais:**
+## Características Principais
 
-1. **Interface Clara e Funcional:** Mantém a interface limpa e intuitiva do ChatGPT-Vercel, facilitando o uso tanto para iniciantes quanto para usuários avançados.
-2. **Suporte a PWA:** Permite instalação como um aplicativo web progressivo (PWA) para acesso rápido e conveniente.
-3. **Prompts Pré-definidos:** Inclui prompts pré-definidos com foco em temas científicos, facilitando o início de conversas sobre tópicos específicos. A busca por prompts é feita com <kbd>Espaço</kbd> ou <kbd>/</kbd>, com destaque para os termos correspondentes.
-4. **Múltiplas Conversas:** Permite a criação de múltiplas conversas (sessões), cada uma com configurações individuais, como o "papel" do robô (por exemplo, especialista em biologia, física, etc.). As conversas podem ser acessadas diretamente por URLs. A busca por conversas e histórico de mensagens é feita com <kbd>Espaço</kbd><kbd>Espaço</kbd> ou <kbd>/</kbd><kbd>/</kbd>.
-5. **Exportação e Importação:** Permite exportar e importar conversas e configurações para backup e compartilhamento.
-6. **Monitoramento de Tokens:** Exibe em tempo real o consumo de tokens durante a conversa, permitindo que o usuário interrompa a interação se necessário.
-7. **Consulta de Saldo:** Suporta diferentes métodos de consulta de saldo da API OpenAI, incluindo agendamento e envio de notificações via WeChat (opcional).
-8. **Suporte a Query URL:** Permite usar o chatbot como um mecanismo de busca, respondendo diretamente a perguntas na URL (ex: `url?q=O que é a fotossíntese?`).
+### Interface Clara e Funcional
+Mantém a interface limpa e intuitiva do ChatGPT-Vercel, facilitando o uso tanto para iniciantes quanto para especialistas do mercado financeiro.
 
-**Adaptações para Diálogo Homem-Robô Baseado em Evidências Científicas:**
+### Suporte a PWA
+Permite instalação como um aplicativo web progressivo (PWA) para acesso rápido e conveniente.
 
-- **Prompts Científicos:** Os prompts pré-definidos são focados em temas científicos, como:
-  - "Explique a teoria da relatividade."
-  - "Quais são os principais mecanismos da evolução?"
-  - "Descreva o ciclo da água."
-  - "Quais são os benefícios da atividade física para a saúde?"
-  - "Como funciona a inteligência artificial?"
-- **Personalização do "Papel" do Robô:** Cada conversa pode ser configurada para que o robô assuma um papel específico, como um especialista em uma área científica particular. Isso permite que o robô forneça respostas mais precisas e relevantes.
-- **Ênfase na Precisão e Evidência:** O chatbot é configurado para priorizar respostas baseadas em evidências científicas, evitando especulações ou informações não verificadas.
-- **Citação de Fontes:** O chatbot pode ser configurado para citar fontes de informação quando apropriado, aumentando a transparência e a confiabilidade das respostas.
-- **Moderação de Respostas:** O chatbot é configurado para evitar respostas que promovam desinformação científica ou teorias da conspiração.
+### Prompts Pré-definidos
+Inclui prompts focados em temas financeiros, permitindo conversas rápidas e assertivas sobre tópicos específicos. A busca por prompts é feita com `Espaço` ou `/`, destacando os termos correspondentes.
 
-**Dicas de Uso:**
+### Múltiplas Conversas
+Permite criar múltiplas sessões de conversa, cada uma com configurações individuais, como o "papel" do robô (por exemplo, especialista em planejamento financeiro, análise de investimentos, ou gestão de riscos). As conversas podem ser acessadas diretamente por URLs. A busca por conversas e histórico de mensagens é feita com `EspaçoEspaço` ou `//`.
 
-- **Contexto Efetivo:** Remova partes irrelevantes ou incorretas da conversa para manter o contexto preciso. O contexto é crucial para respostas coerentes.
-- **Bloqueio de Mensagens:** Use o bloqueio de mensagens (clicando no avatar) para manter informações importantes no contexto, mesmo ao limpar a conversa ou desativar o histórico.
-- **Obtenção da Chave API OpenAI:** Registre-se no OpenAI e gere uma chave API.
-- **Entrada de Texto:**
-  - <kbd>Enter</kbd> para enviar (opcional), <kbd>Shift</kbd>+<kbd>Enter</kbd> para nova linha.
-  - <kbd>Espaço</kbd> ou <kbd>/</kbd> para buscar prompts.
-  - <kbd>Espaço</kbd><kbd>Espaço</kbd> ou <kbd>/</kbd><kbd>/</kbd> para buscar conversas e histórico.
-  - <kbd>↑</kbd> para preencher a entrada com a última pergunta.
-- **Ações em Mensagens:**
-  - **Perguntas:** Editar (preenche a entrada), Reenviar, Excluir.
-  - **Respostas:** Copiar, Reenviar, Excluir.
-- **Navegação:** Clique no título para ir ao topo, clique na entrada para ir ao final.
-- **Query URL:** Use `url?q=pergunta` para obter respostas diretas.
+### Exportação e Importação
+Oferece a possibilidade de exportar e importar conversas e configurações para backup e compartilhamento de insights financeiros.
 
-**Configurações e Ações:**
+### Monitoramento de Tokens
+Exibe em tempo real o consumo de tokens durante a conversa, permitindo controle sobre os custos de interação.
 
-- **Personificação:** Simule perguntas e respostas do usuário e do robô.
-- **Geração de Imagem:** Crie uma imagem da conversa para compartilhar.
-- **Geração de Markdown:** Crie um texto Markdown da conversa.
-- **Limpar Conversa:** Apague o histórico da conversa.
-- **Configurações Globais:** Defina senha, chave API, envio com Enter.
-- **Configurações da Conversa:** Defina título, ícone, temperatura, modelo, histórico.
+### Consulta de Saldo
+Integra métodos para consulta de saldo da API OpenAI, incluindo agendamento e envio de notificações via plataformas externas (opcional).
 
-**Implementação:**
+### Suporte a Query URL
+Permite usar o chatbot como um mecanismo de busca, respondendo diretamente a perguntas via URL (exemplo: `url?q=Como diversificar um portfólio?`).
 
-1. **Implantação:** Use o botão "Deploy with Vercel" ou faça um fork do repositório e importe para o Vercel.
-2. **Configuração:** Defina as variáveis de ambiente (chave API, senha, etc.).
-3. **Personalização:** Ajuste os prompts, o "papel" do robô e outras configurações para atender às suas necessidades.
+---
+
+## Adaptações para o Contexto Financeiro
+
+### Prompts Financeiros
+Os prompts pré-definidos abordam tópicos relevantes, como:
+- "Explique a importância da diversificação de portfólio."
+- "Quais são os principais riscos em operações cambiais?"
+- "Descreva estratégias de hedge para proteger contra volatilidade."
+- "Como calcular o retorno esperado de um investimento?"
+- "Explique os benefícios de um planejamento financeiro de longo prazo."
+
+### Personalização do Papel do Robô
+Cada conversa pode ser configurada para que o robô assuma um papel específico, como:
+- Consultor financeiro
+- Especialista em gestão de riscos
+- Analista de investimentos
+- Planejador financeiro pessoal
+
+### Ênfase em Evidências e Conformidade
+O chatbot prioriza respostas baseadas em evidências financeiras e em conformidade com normas do mercado, evitando especulações ou informações imprecisas.
+
+### Citação de Fontes
+Pode ser configurado para citar fontes confiáveis, aumentando a transparência e a credibilidade das respostas fornecidas.
+
+### Moderação de Respostas
+O chatbot evita respostas que possam promover práticas financeiras arriscadas ou fora de conformidade com regulamentações do mercado.
+
+---
+
+## Dicas de Uso
+
+### Contexto Efetivo
+Remova partes irrelevantes ou incorretas da conversa para manter o contexto financeiro preciso. O contexto é crucial para respostas coerentes e alinhadas aos objetivos.
+
+### Bloqueio de Mensagens
+Use o bloqueio de mensagens (clicando no avatar) para manter informações importantes no contexto, mesmo ao limpar a conversa ou desativar o histórico.
+
+### Entrada de Texto
+- **Enter** para enviar (opcional), **Shift+Enter** para nova linha.
+- **Espaço** ou **/** para buscar prompts.
+- **EspaçoEspaço** ou **//** para buscar conversas e histórico.
+- **↑** para preencher a entrada com a última pergunta.
+
+### Ações em Mensagens
+- **Perguntas**: Editar (preenche a entrada), Reenviar, Excluir.
+- **Respostas**: Copiar, Reenviar, Excluir.
+
+### Configurações e Ações
+- **Personificação**: Simule perguntas e respostas do usuário e do robô.
+- **Geração de Markdown**: Crie um texto Markdown da conversa.
+- **Limpar Conversa**: Apague o histórico da conversa.
+- **Configurações Globais**: Defina senha, chave API, envio com Enter.
+- **Configurações da Conversa**: Defina título, ícone, temperatura, modelo, histórico.
+
+---
+
+## Implementação
+
+### Implantação
+- Use o botão "Deploy with Vercel" ou faça um fork do repositório e importe para o Vercel.
+
+### Configuração
+- Defina as variáveis de ambiente, como chave API e senha.
+
+### Personalização
+- Ajuste os prompts, o "papel" do robô e outras configurações para atender às suas necessidades específicas no setor financeiro.
